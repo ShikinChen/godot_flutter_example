@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://4gbo72hirr13"]
+
+[ext_resource type="Script" uid="uid://disg0u6ft8wqt" path="res://Main.cs" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://c7dhiq2lgy8vl" path="res://PageButton.cs" id="2_0xm2m"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_kdb4q"]
+
+[node name="Node3D" type="Node3D" unique_id=1493195242]
+script = ExtResource("1_ig7tw")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2142078482]
+mesh = SubResource("BoxMesh_kdb4q")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1624312958]
+transform = Transform3D(1, 0, 0, 0, 0.9866011, 0.163151, 0, -0.163151, 0.9866011, 0, 1.080559, 4.0910926)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1299314394]
+transform = Transform3D(1, 0, 0, 0, 0.9473915, 0.32007715, 0, -0.32007715, 0.9473915, 0, 1.3004893, 3.0468965)
+shadow_enabled = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1885316770]
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=1403718238]
+offset_right = 8.0
+offset_bottom = 8.0
+theme_override_font_sizes/font_size = 64
+toggle_mode = true
+text = "to Page A"
+script = ExtResource("2_0xm2m")

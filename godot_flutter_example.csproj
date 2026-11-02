@@ -1,0 +1,13 @@
+<Project Sdk="Godot.NET.Sdk/4.7.2">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework Condition=" '$(GodotTargetPlatform)' == 'android' ">net9.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- 排除不需要编译的目录 -->
+    <Compile Remove="android/**" />
+    <Compile Remove="flutter/**" />
+    <Compile Remove="godot/**" />
+  </ItemGroup>
+</Project>

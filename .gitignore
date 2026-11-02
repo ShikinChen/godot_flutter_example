@@ -1,0 +1,13 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Flutter Godot generated files and local configuration
+/godot/
+bin/
+obj/
+/godot.gdkey
+*.keystore
+*.jks
+.DS_Store
+flutter_config
