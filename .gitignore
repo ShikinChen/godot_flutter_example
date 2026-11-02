@@ -12,3 +12,4 @@ obj/
 *.jks
 .DS_Store
 flutter_config
+*.apk
